@@ -6,7 +6,10 @@ import { Jatetxea } from '../interfaces/jatetxea';
 })
 export class JatetxeaService {
 
-  constructor(private http: HttpClient ) { }
+  constructor(private http: HttpClient ) {
+     this.uploadJatetxeak();
+     setTimeout(() => {},1000);
+   }
 
   getJatetxeak(){
 
@@ -15,19 +18,20 @@ export class JatetxeaService {
 
   private _jatetxeak: Jatetxea[] = [];
 
-  printJatetxeak(){
+  get jatetxeak(){
+    return [...this._jatetxeak];
+  }
+
+  uploadJatetxeak(){
 
     this.getJatetxeak().subscribe({
     next: (jatetxeak) => {
       this._jatetxeak = jatetxeak;
-      console.log(this._jatetxeak)
     },
-    error: (err) => console.error('Error holalola', err),s
+    error: (err) => console.error('Error holalola', err)
   })
 
   }
 
-  asd(){
-    console.log(this._jatetxeak)
-  }
+
 }
