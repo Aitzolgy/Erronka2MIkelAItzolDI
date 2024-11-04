@@ -17,10 +17,10 @@ export class AppComponent {
 
   constructor(private jatetxeaService:JatetxeaService) {
     setTimeout(() => {
-    console.log(jatetxeaService.jatetxeak)
-    })
-  }
+      this.jatetxeaService.ngOnKaka();
+    }, 1000);
 
+  }
 
 }
 
