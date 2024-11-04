@@ -18,7 +18,7 @@ export class AppComponent {
   constructor(private jatetxeaService:JatetxeaService) {
     setTimeout(() => {
       this.jatetxeaService.ngOnKaka();
-    }, 1000);
+    }, 300);
 
   }
 

@@ -1,21 +1,22 @@
 <article>
-
-<a [routerLink]="['']" ><img src="logos/logo.jpg" alt="jatetxeLogo"></a>
-
-
+  <a [routerLink]="['']"><img src="logos/logo.jpg" alt="jatetxeLogo" /></a>
 
   <h1>{{ jatetxea.documentName }}</h1>
   <p>{{ jatetxea.documentDescription }}</p>
 
-  <div>
-    <strong>Udalerria:</strong> {{ jatetxea.city }}
-  </div>
+  <div><strong>Udalerria:</strong> {{ jatetxea.city }}</div>
 
-  <div>
-    <strong>Telefonoa:</strong> {{ jatetxea.phone }}
-  </div>
+  <div><strong>Telefonoa:</strong> {{ jatetxea.phone }}</div>
 
   <div>
     <a [href]="jatetxea.web" target="_blank">Ireki webgunea</a>
   </div>
+
+  <section>
+    <div id="map" style="height: 400px; width: 100%;"></div>
+
+
+
+
+  </section>
 </article>
