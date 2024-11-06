@@ -1,8 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute, RouterModule } from '@angular/router';
+import { ActivatedRoute, RouterModule,RouterOutlet } from '@angular/router';
 import { JatetxeaService } from '../service/jatetxea.service';
-import { RouterOutlet } from '@angular/router';
 import * as L from 'leaflet';
 
 @Component({
@@ -23,6 +22,7 @@ export class DetailsComponent {
 
   ngOnInit(): void {
     this.jatetxeId = String(this.route.snapshot.paramMap.get('id'));
+    //id berrezkuratu
 
   }
 

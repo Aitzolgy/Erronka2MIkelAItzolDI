@@ -2,12 +2,17 @@
 
 <section>
   <form>
-    <input type="text" #filter placeholder="Filter by city" />
+    <input type="text" #filter placeholder="Filter by city" list="jatetxes"/>
     <button class="primary" type="button" (click)="filtratu(filter.value)">
       Bilatu
     </button>
   </form>
   <p>Jatetxe kantitate: {{filteredJatetxeak.length}}</p>
+
+
+  <datalist id="jatetxes">
+    <option *ngFor="let i of jatetxeakUniqueMunicipy" [value]="i.municipality"></option>
+  </datalist>
 </section>
 
 <div class="row">

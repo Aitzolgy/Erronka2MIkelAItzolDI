@@ -1,22 +1,20 @@
+<a [routerLink]="['']"><img src="logos/logo.jpg" alt="jatetxeLogo" /></a>
+<hr>
 <article>
-  <a [routerLink]="['']"><img src="logos/logo.jpg" alt="jatetxeLogo" /></a>
+  <div class="card shadow-sm p-4" style="max-width: p100vw; border-radius: 10px;">
+    <div class="card-body">
+      <h1 class="card-title">{{ jatetxea.documentName }}</h1>
+      <p class="card-text">{{ jatetxea.documentDescription }}</p>
 
-  <h1>{{ jatetxea.documentName }}</h1>
-  <p>{{ jatetxea.documentDescription }}</p>
+      <div><strong>Udalerria:</strong> {{ jatetxea.city }}</div>
+      <div><strong>Telefonoa:</strong> {{ jatetxea.phone }}</div>
 
-  <div><strong>Udalerria:</strong> {{ jatetxea.city }}</div>
-
-  <div><strong>Telefonoa:</strong> {{ jatetxea.phone }}</div>
-
-  <div>
-    <a [href]="jatetxea.web" target="_blank">Ireki webgunea</a>
+      <div>
+        <a class="btn btn-link" [href]="jatetxea.web" target="_blank">Ireki webgunea</a>
+      </div>
+    </div>
   </div>
-
   <section>
     <div id="map" style="height: 400px; width: 100%;"></div>
-
-
-
-
   </section>
 </article>

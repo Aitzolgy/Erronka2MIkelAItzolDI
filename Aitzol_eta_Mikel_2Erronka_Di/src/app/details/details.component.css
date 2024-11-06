@@ -4,6 +4,7 @@
 }
 
 
+
 /* Hacer que el contenedor ocupe la mitad de la pantalla y esté centrado */
 body, html {
   height: 100%;
@@ -50,7 +51,6 @@ article p {
   font-size: 18px;
   color: #555;
   margin-bottom: 20px;
-  padding: 0 10px;
   text-align: justify;
 }
 
